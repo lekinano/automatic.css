@@ -249,6 +249,14 @@ These are generated from the text size system.
 	color: var(--base);	
 }
 
+.text--shade-white {
+	color: var(--shade-white);	
+}
+
+.text--shade-black {
+	color: var(--shade-black);	
+}
+
 /*** 
 PADDING UTILITY CLASSES
 These apply padding to sections and containers.
