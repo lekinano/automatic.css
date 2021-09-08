@@ -4,7 +4,6 @@
 .grid-2--auto {
 	display: grid!important;
 	grid-template-columns: auto auto;
-	width: 100%;
 }
 .grid--6 {
 	display: grid!important;
