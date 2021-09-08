@@ -360,7 +360,7 @@ Use these to automatically space everything in a section or container without cr
 }
 
 .ct-section.owl--m .ct-section-inner-wrap > * + *,
-.owl:not(.ct-section) > * + * {
+.owl--m:not(.ct-section) > * + * {
 	margin-top: calc(var(--base-space) * 1rem);
 }
 
