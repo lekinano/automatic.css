@@ -1,6 +1,7 @@
-/* GRID */
+/* COLUMNS - DESKTOP */
+/* ----------------- */
 
-.grid-auto--2 {
+.grid-2--auto {
 display: grid!important;
 grid-template-columns: auto auto;
 width: 100%;
@@ -29,6 +30,10 @@ width: 100%;
 display: grid!important;
 grid-template-columns: repeat(2, 1fr); 
 width: 100%;
+}
+.grid--1 {
+display: grid!important;
+grid-template-columns: 1fr;
 }
 .grid--3-2 {
 display: grid!important;
