@@ -1096,25 +1096,25 @@ These control the position/behavior of elements
 
 @media only screen and (max-width: 479px) {
 	.col-reverse--s {
-		flex-direction: col-reverse;
+		flex-direction: column-reverse;
 }
 }
 
 @media only screen and (max-width: 767px) {
 	.col-reverse--m {
-		flex-direction: col-reverse;
+		flex-direction: column-reverse;
 }
 }
 
 @media only screen and (max-width: 991px) {
 	.col-reverse--l {
-		flex-direction: col-reverse;
+		flex-direction: column-reverse;
 }
 }
 
 @media only screen and (max-width: calc((var(--vp-max) * 1rem)) - 1px)  {
 	.col-reverse--xl {
-		flex-direction: col-reverse;
+		flex-direction: column-reverse;
 }
 }
 
