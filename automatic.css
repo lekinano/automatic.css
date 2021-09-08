@@ -177,10 +177,9 @@ body {
 }
 
 .ct-section-inner-wrap {
-	--pad-min: calc(var(--base-space) * (var(--space-adjust-mob-l) * var(--space-adjust-section)));
-	--pad-max: calc(var(--base-space) * (var(--space-adjust-desk-l) * var(--space-adjust-section)));
+	--pad-min: calc((var(--base-space) * (var(--space-adjust-mob-l)) * var(--space-adjust-section)));
+	--pad-max: calc((var(--base-space) * (var(--space-adjust-desk-l)) * var(--space-adjust-section)));
 }
-
 
 h1 {
 	--clamp-min: calc(var(--base-text-mobile) * var(--text-adjust-mob-xxl));
@@ -211,7 +210,7 @@ These are generated from the text size system.
 ***/
 
 .text--xs {
-	font-size: calc(var(--base-text-mobile) * 1rem - var(--text-adjust-mob-xs) * 1rem);
+	font-size: calc((var(--base-text-mobile) * 1rem) - (var(--text-adjust-mob-xs) * 1rem));
 }
 .text--s {
 	font-size: calc(var(--base-text-mobile) * 1rem);
@@ -263,21 +262,21 @@ These apply padding to sections and containers.
 ***/
 
 :is(.pad--l, .pad--xl, .pad--xxl) {
-	padding: clamp(var(--pad-min) * 1rem, calc(var(--pad-min) * 1rem + ((1vw - (var(--vp-min) / 100) * 1rem) * (100 * (var(--pad-max) - var(--pad-min)) / (var(--vp-max) - var(--vp-min))))), var(--pad-max) * 1rem);
+	padding: clamp(calc(var(--pad-min) * 1rem), calc(var(--pad-min) * 1rem + ((1vw - (var(--vp-min) / 100) * 1rem) * (100 * (var(--pad-max) - var(--pad-min)) / (var(--vp-max) - var(--vp-min))))), calc(var(--pad-max) * 1rem));
 }
 
-:is(.ct-section, .pad-section, .pad-section--l, .pad-section--xl, .pad-section--xxl) .ct-section-inner-wrap {
-	padding: clamp(var(--pad-min) * 1rem, calc(var(--pad-min) * 1rem + ((1vw - (var(--vp-min) / 100) * 1rem) * (100 * (var(--pad-max) - var(--pad-min)) / (var(--vp-max) - var(--vp-min))))), var(--pad-max) * 1rem) calc(var(--base-space) * 1rem);
+:is(.ct-section, .pad-section--m, .pad-section--l, .pad-section--xl, .pad-section--xxl) .ct-section-inner-wrap {
+	padding: clamp(calc(var(--pad-min) * 1rem), calc(var(--pad-min) * 1rem + ((1vw - (var(--vp-min) / 100) * 1rem) * (100 * (var(--pad-max) - var(--pad-min)) / (var(--vp-max) - var(--vp-min))))), calc(var(--pad-max) * 1rem)) calc(var(--base-space) * 1rem);
 }
 
 .pad--xs {
-	padding: calc(var(--base-space) * var(--space-adjust-mob-xs) * 1rem);
+	padding: calc((var(--base-space) * var(--space-adjust-mob-xs)) * 1rem);
 }
 .pad--s {
-	padding: calc(var(--base-space) * var(--space-adjust-mob-s) * 1rem);
+	padding: calc((var(--base-space) * var(--space-adjust-mob-s)) * 1rem);
 }
 .pad--m {
-	padding: calc(var(--base-space) * var(--space-adjust-mob-m) * 1rem);
+	padding: calc((var(--base-space) * var(--space-adjust-mob-m)) * 1rem);
 }
 .pad--l {
 	--pad-min: calc(var(--base-space) * var(--space-adjust-mob-l));
@@ -298,8 +297,8 @@ These apply padding to sections and containers.
 	padding: calc((var(--base-space) * var(--space-adjust-mob-s)) * 1rem) calc(var(--base-space) * 1rem);
 }
 .pad-section--m .ct-section-inner-wrap {
-	--pad-min: calc(var(--base-space) * (var(--space-adjust-mob-l) * var(--space-adjust-section)));
-	--pad-max: calc(var(--base-space) * (var(--space-adjust-desk-l) * var(--space-adjust-section)));
+	--pad-min: calc((var(--base-space) * (var(--space-adjust-mob-l)) * var(--space-adjust-section)));
+	--pad-max: calc((var(--base-space) * (var(--space-adjust-desk-l)) * var(--space-adjust-section)));
 }
 .pad-section--l .ct-section-inner-wrap {
 	--pad-min: calc((var(--base-space) * (var(--space-adjust-mob-l)) * var(--space-adjust-section)));
@@ -323,13 +322,13 @@ These apply margin to elements.
 	margin-bottom: clamp(var(--margin-min) * 1rem, calc(var(--margin-min) * 1rem + ((1vw - (var(--vp-min) / 100) * 1rem) * (100 * (var(--margin-max) - var(--margin-min)) / (var(--vp-max) - var(--vp-min))))), var(--margin-max) * 1rem);
 }
 .margin-bottom--xs {
-	margin-bottom: calc(var(--base-space) * var(--space-adjust-mob-xs) * 1rem);
+	margin-bottom: calc((var(--base-space) * var(--space-adjust-mob-xs)) * 1rem);
 }
 .margin-bottom--s {
-	margin-bottom: calc(var(--base-space) * var(--space-adjust-mob-s) * 1rem);
+	margin-bottom: calc((var(--base-space) * var(--space-adjust-mob-s)) * 1rem);
 }
 .margin-bottom--m {
-	margin-bottom: calc(var(--base-space) * var(--space-adjust-mob-m) * 1rem);
+	margin-bottom: calc((var(--base-space) * var(--space-adjust-mob-m)) * 1rem);
 }
 .margin-bottom--l {
 	--margin-min: calc(var(--base-space) * var(--space-adjust-mob-l));
