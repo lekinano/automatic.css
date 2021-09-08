@@ -1005,3 +1005,147 @@ These control the border radius of elements
 .rounded--circle {
 	border-radius: 50%;
 }
+
+/*** 
+CENTERING CLASSES
+These control element centering
+***/
+
+.center--all {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.center--y {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.center--x {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.center--left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.center--right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+/*** 
+FLEX CLASSES
+These control the position/behavior of elements
+***/
+
+.flex--row {
+	display: flex;
+	flex-direction: row;
+}
+
+.row-reverse {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 479px) {
+	.row-reverse--s {
+		flex-direction: row-reverse;
+}
+}
+
+@media only screen and (max-width: 767px) {
+	.row-reverse--m {
+		flex-direction: row-reverse;
+}
+}
+
+@media only screen and (max-width: 991px) {
+	.row-reverse--l {
+		flex-direction: row-reverse;
+}
+}
+
+@media only screen and (max-width: calc((var(--vp-max) * 1rem)) - 1px)  {
+	.row-reverse--xl {
+		flex-direction: row-reverse;
+}
+}
+
+.flex--col {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex--col-reverse {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.justify--start {
+	justify-content: flex-start;
+}
+
+.justify--center {
+	justify-content: center;
+}
+
+.justify--end {
+	justify-content: flex-end;
+}
+
+.justify--between {
+	justify-content: space-between;
+}
+
+.justify--around {
+	justify-content: space-around;
+}
+
+.align--start {
+	align-items: flex-start;
+}
+
+.align--center {
+	align-items: center;
+}
+
+.align--end {
+	align-items: flex-end;
+}
+
+.align--baseline {
+	align-items: baseline;
+}
+
+.flex--wrap {
+	flex-wrap: wrap;
+}
+
+.self--start {
+	align-self: flex-start;
+}
+
+.self--end {
+	align-self: flex-end;
+}
+
+.self--center {
+	align-self: center;
+}
+
+.self--stretch {
+	align-self: stretch;
+}
