@@ -461,7 +461,7 @@ Change the max-width of any element. Values are generated from base viewport siz
 }
 .max-width--full {
   	width: 100%;
-  	max-width: calc(var(--vp-max) * 1rem);
+  	max-width: 100%;
 }
 
 /*** 
