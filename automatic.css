@@ -276,7 +276,7 @@ These apply padding to sections and containers.
 .pad--s {
 	padding: calc(var(--base-space) * var(--space-adjust-mob-s) * 1rem);
 }
-.pad {
+.pad--m {
 	padding: calc(var(--base-space) * var(--space-adjust-mob-m) * 1rem);
 }
 .pad--l {
@@ -297,7 +297,7 @@ These apply padding to sections and containers.
 .pad-section--s .ct-section-inner-wrap {
 	padding: calc((var(--base-space) * var(--space-adjust-mob-s)) * 1rem) calc(var(--base-space) * 1rem);
 }
-.pad-section .ct-section-inner-wrap {
+.pad-section--m .ct-section-inner-wrap {
 	--pad-min: calc(var(--base-space) * (var(--space-adjust-mob-l) * var(--space-adjust-section)));
 	--pad-max: calc(var(--base-space) * (var(--space-adjust-desk-l) * var(--space-adjust-section)));
 }
@@ -328,7 +328,7 @@ These apply margin to elements.
 .margin-bottom--s {
 	margin-bottom: calc(var(--base-space) * var(--space-adjust-mob-s) * 1rem);
 }
-.margin-bottom {
+.margin-bottom--m {
 	margin-bottom: calc(var(--base-space) * var(--space-adjust-mob-m) * 1rem);
 }
 .margin-bottom--l {
@@ -360,7 +360,7 @@ Use these to automatically space everything in a section or container without cr
 	margin-top: calc(var(--base-space) * var(--space-adjust-mob-s) * 1rem);
 }
 
-.ct-section.owl .ct-section-inner-wrap > * + *,
+.ct-section.owl--m .ct-section-inner-wrap > * + *,
 .owl:not(.ct-section) > * + * {
 	margin-top: calc(var(--base-space) * 1rem);
 }
@@ -806,7 +806,7 @@ Horizontally break any element out of its parent container.
 	max-width: 60vw;
 	margin: 0 calc(-30vw + 50%);
 }
-.breakout {
+.breakout--m {
 	width: 70vw;
 	max-width: 70vw;
 	margin: 0 calc(-35vw + 50%);
@@ -843,7 +843,7 @@ Horizontally break any element out of its parent container.
 .sticky-top--s {
 	top: 2.5%;
 }
-.sticky-top {
+.sticky-top--m {
 	top: 5%;
 }
 .sticky-top--l {
