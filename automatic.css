@@ -439,27 +439,27 @@ MAX WIDTH UTILITY CLASSES
 Change the max-width of any element. Values are generated from base viewport sizes so they adapt to viewport defaults.
 */
 
-.max-width--s {
+.width--s {
 	width: 100%;
 	max-width: calc(var(--vp-min) * 1rem);
 }
-.max-width--m {
+.width--m {
 	width: 100%;
  	max-width: calc(var(--vp-max) * .4 * 1rem);
 }
-.max-width--l {
+.width--l {
 	width: 100%;
  	max-width: calc(var(--vp-max) * .6 * 1rem);
 }
-.max-width--xl {
+.width--xl {
 	width: 100%;
  	max-width: calc(var(--vp-max) * .8 * 1rem);
 }
-.max-width--xxl {
+.width--xxl {
 	width: 100%;
  	max-width: calc(var(--vp-max) * .9 * 1rem);
 }
-.max-width--full {
+.width--full {
   	width: 100%;
   	max-width: 100%;
 }
