@@ -1018,16 +1018,120 @@ These control element centering
 	text-align: center;
 }
 
+@media only screen and (max-width: 479px) {
+	.center--all-s {
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.center--all-m {
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.center--all-l {
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 1279px) {
+	.center--all-xl {
+		display: flex;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
 .center--y {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
+@media only screen and (max-width: 479px) {
+	.center--y-s {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.center--y-m {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.center--y-l {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 1279px) {
+	.center--y-xl {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
 .center--x {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+}
+
+@media only screen and (max-width: 479px) {
+	.center--x-s {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.center--x-m {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.center--x-l {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;	
+	}
+}
+
+@media only screen and (max-width: 1279px) {
+	.center--x-xl {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
 }
 
 .center--left {
@@ -1037,11 +1141,83 @@ These control element centering
 	align-items: flex-start;
 }
 
+@media only screen and (max-width: 479px) {
+	.center--left-s {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.center--left-m {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.center--left-l {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+}
+
+@media only screen and (max-width: 1279px) {
+	.center--left-xl {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+}
+
 .center--right {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-end;
+}
+
+@media only screen and (max-width: 479px) {
+	.center--right-s {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.center--right-m {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.center--right-l {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+	}
+}
+
+@media only screen and (max-width: 1279px) {
+	.center--right-xl {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+	}
 }
 
 /*** 
@@ -1077,7 +1253,7 @@ These control the position/behavior of elements
 }
 }
 
-@media only screen and (max-width: calc((var(--vp-max) * 1rem)) - 1px)  {
+@media only screen and (max-width: 1279px) {
 	.row-reverse--xl {
 		flex-direction: row-reverse;
 }
@@ -1114,7 +1290,7 @@ These control the position/behavior of elements
 }
 }
 
-@media only screen and (max-width: calc((var(--vp-max) * 1rem)) - 1px)  {
+@media only screen and (max-width: 1279px) {
 	.col-reverse--xl {
 		display: flex;
 		flex-direction: column-reverse;
