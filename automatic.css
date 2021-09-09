@@ -1010,7 +1010,8 @@ CENTERING CLASSES
 These control element centering
 ***/
 
-.center--all {
+.ct-section.center--all .ct-section-inner-wrap,
+.center--all:not(.ct-section) {
 	display: flex;
 	align-items: center;
 	align-content: center;
@@ -1019,7 +1020,8 @@ These control element centering
 }
 
 @media only screen and (max-width: 479px) {
-	.center--all-s {
+	.ct-section.center--all-s .ct-section-inner-wrap,
+	.center--all-s:not(.ct-section) {
 		display: flex;
 		align-items: center;
 		align-content: center;
@@ -1029,7 +1031,8 @@ These control element centering
 }
 
 @media only screen and (max-width: 767px) {
-	.center--all-m {
+	.ct-section.center--all-m .ct-section-inner-wrap,
+	.center--all-m:not(.ct-section) {
 		display: flex;
 		align-items: center;
 		align-content: center;
@@ -1039,7 +1042,8 @@ These control element centering
 }
 
 @media only screen and (max-width: 991px) {
-	.center--all-l {
+	.ct-section.center--all-l .ct-section-inner-wrap,
+	.center--all-l:not(.ct-section) {
 		display: flex;
 		align-items: center;
 		align-content: center;
@@ -1049,7 +1053,8 @@ These control element centering
 }
 
 @media only screen and (max-width: 1279px) {
-	.center--all-xl {
+	.ct-section.center--all-xl .ct-section-inner-wrap,
+	.center--all-xl:not(.ct-section) {
 		display: flex;
 		align-items: center;
 		align-content: center;
