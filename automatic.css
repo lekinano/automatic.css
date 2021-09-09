@@ -469,7 +469,7 @@ Quickly apply brand colors to the background.
 ***/
 
 .bg--primary {
-	background-color: var(--primary);	
+  background-color: var(--primary);	
 }
 
 .bg--primary-hover {
@@ -505,11 +505,11 @@ Quickly apply brand colors to the background.
 }
 
 .bg--primary-trans-20 {
-  background-color: var(--primary-trans-20);
+	background-color: var(--primary-trans-20);
 }
 
 .bg--primary-comp {
-  background-color: var(--primary-comp);
+	background-color: var(--primary-comp);
 }
 
 .bg--secondary {
@@ -644,6 +644,49 @@ Quickly apply brand colors to the background.
   background-color: var(--base-comp);
 }
 
+.bg--black {
+	background-color: var(--shade-black);
+}
+
+.bg--white {
+	background-color: var(--shade-white);
+}
+
+.bg--shade-ultra-light {
+	background-color: var(--shade-ultra-light);
+}
+
+.bg--shade-light {
+	background-color: var(--shade-light);
+}
+
+.bg--shade-medium {
+	background-color: var(--shade-medium);
+}
+
+.bg--shade-dark {
+	background-color: var(--shade-dark);
+}
+
+.bg--shade-ultra-dark {
+	background-color: var(--shade-ultra-dark);
+}
+
+.bg--black-trans-80 {
+	background-color: var(--black-trans-80);
+}
+
+.bg--black-trans-60 {
+	background-color: var(--black-trans-60);
+}
+
+.bg--black-trans-40 {
+	background-color: var(--black-trans-40);
+}
+
+.bg--black-trans-20 {
+	background-color: var(--black-trans-20);
+}
 
 /*** 
 OVERLAY CLASSES
