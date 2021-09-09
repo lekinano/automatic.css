@@ -141,16 +141,17 @@ The adjustment variables are multipliers of the base size.
 ***/
 	
 	--base-space: 3;
-	--space-adjust-mob-xs: .6; 
-	--space-adjust-mob-s: .8; 
+	--space-adjust-mob-xs: .2; 
+	--space-adjust-mob-s: .6; 
 	--space-adjust-mob-m: 1; 
 	--space-adjust-mob-l: 1.2; 
 	--space-adjust-mob-xl: 1.4; 
 	--space-adjust-mob-xxl: 1.8;
-	--space-adjust-desk-l: 1.2;
-	--space-adjust-desk-xl: 1.4;
-	--space-adjust-desk-xxl: 1.8;
-	--space-adjust-section: 2.4;
+	--space-adjust-desk-m: 1.4;
+	--space-adjust-desk-l: 1.8;
+	--space-adjust-desk-xl: 2.4;
+	--space-adjust-desk-xxl: 3.4;
+	--space-adjust-section: 3;
 }
 
 /***** END ROOT VARIABLES *****/
@@ -265,7 +266,11 @@ These apply padding to sections and containers.
 	padding: clamp(calc(var(--pad-min) * 1rem), calc(var(--pad-min) * 1rem + ((1vw - (var(--vp-min) / 100) * 1rem) * (100 * (var(--pad-max) - var(--pad-min)) / (var(--vp-max) - var(--vp-min))))), calc(var(--pad-max) * 1rem));
 }
 
-:is(.ct-section, .pad-section--m, .pad-section--l, .pad-section--xl, .pad-section--xxl) .ct-section-inner-wrap {
+:is(.pad-section--m, .pad-section--l, .pad-section--xl, .pad-section--xxl) .ct-section-inner-wrap {
+	padding: clamp(calc(var(--pad-min) * 1rem), calc(var(--pad-min) * 1rem + ((1vw - (var(--vp-min) / 100) * 1rem) * (100 * (var(--pad-max) - var(--pad-min)) / (var(--vp-max) - var(--vp-min))))), calc(var(--pad-max) * 1rem)) calc(var(--base-space) * 1rem);
+}
+
+.ct-section .ct-section-inner-wrap {
 	padding: clamp(calc(var(--pad-min) * 1rem), calc(var(--pad-min) * 1rem + ((1vw - (var(--vp-min) / 100) * 1rem) * (100 * (var(--pad-max) - var(--pad-min)) / (var(--vp-max) - var(--vp-min))))), calc(var(--pad-max) * 1rem)) calc(var(--base-space) * 1rem);
 }
 
@@ -290,16 +295,24 @@ These apply padding to sections and containers.
 	--pad-min: calc(var(--base-space) * var(--space-adjust-mob-xxl));
 	--pad-max: calc(var(--base-space) * var(--space-adjust-desk-xxl));
 }
+
 .pad-section--xs .ct-section-inner-wrap {
-	padding: calc((var(--base-space) * var(--space-adjust-mob-xs)) * 1rem) calc(var(--base-space) * 1rem);
+	padding: calc((var(--base-space) * var(--space-adjust-mob-s)) * (var(--space-adjust-section) * 1rem)) calc(var(--base-space) * 1rem);
 }
+
 .pad-section--s .ct-section-inner-wrap {
-	padding: calc((var(--base-space) * var(--space-adjust-mob-s)) * 1rem) calc(var(--base-space) * 1rem);
+	padding: calc((var(--base-space) * var(--space-adjust-mob-m)) * (var(--space-adjust-section) * 1rem)) calc(var(--base-space) * 1rem);
 }
-.pad-section--m .ct-section-inner-wrap {
-	--pad-min: calc((var(--base-space) * (var(--space-adjust-mob-l)) * var(--space-adjust-section)));
-	--pad-max: calc((var(--base-space) * (var(--space-adjust-desk-l)) * var(--space-adjust-section)));
+
+/* DEFAULT SECTION PADDING */
+
+.ct-section .ct-section-inner-wrap {
+	--pad-min: calc((var(--base-space) * (var(--space-adjust-mob-m)) * var(--space-adjust-section)));
+	--pad-max: calc((var(--base-space) * (var(--space-adjust-desk-m)) * var(--space-adjust-section)));
 }
+
+/* END DEFAULT SECTION PADDING */
+
 .pad-section--l .ct-section-inner-wrap {
 	--pad-min: calc((var(--base-space) * (var(--space-adjust-mob-l)) * var(--space-adjust-section)));
 	--pad-max: calc((var(--base-space) * (var(--space-adjust-desk-l)) * var(--space-adjust-section)));
