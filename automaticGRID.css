@@ -1,0 +1,43 @@
+:root {
+	--grid-break--2: calc(((var(--vp-max) - (var(--base-space) * 2)) * 1rem) / 2.5);
+	--grid-break--3: calc(((var(--vp-max) - (var(--base-space) * 2)) * 1rem) / 3.5);
+	--grid-break--4: calc(((var(--vp-max) - (var(--base-space) * 2)) * 1rem) / 4.5);
+	--grid-break--5: calc(((var(--vp-max) - (var(--base-space) * 2)) * 1rem) / 5);
+	--grid-break--6: calc(((var(--vp-max) - (var(--base-space) * 2)) * 1rem) / 5.95);
+}
+
+/* STANDARD GRIDS */
+
+.grid--1 {
+	display: grid!important;
+	grid-template-columns: 1fr;
+}
+.grid--2 {
+	display: grid!important;
+	grid-template-columns: repeat(auto-fit, minmax(var(--grid-break--2), 1fr));
+	width: 100%;
+}
+.grid-2--auto {
+	display: grid!important;
+	grid-template-columns: auto auto;
+}
+.grid--3 {
+	display: grid!important;
+	grid-template-columns: repeat(auto-fit, minmax(var(--grid-break--3), 1fr));
+	width: 100%;
+}
+.grid--4 {
+	display: grid!important;
+	grid-template-columns: repeat(auto-fit, minmax(var(--grid-break--4), 1fr));
+	width: 100%;
+}
+.grid--5 {
+	display: grid!important;
+	grid-template-columns: repeat(auto-fit, minmax(var(--grid-break--5), 1fr));
+	width: 100%;
+}
+.grid--6 {
+	display: grid!important;
+	grid-template-columns: repeat(auto-fit, minmax(var(--grid-break--6), 1fr));
+	width: 100%;
+}
