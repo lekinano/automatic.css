@@ -41,3 +41,39 @@
 	grid-template-columns: repeat(auto-fit, minmax(var(--grid-break--6), 1fr));
 	width: 100%;
 }
+
+/* GRID GAPS */
+	
+:is(.gap--l, .gap--xl, .gap--xxl) {
+	grid-gap: clamp(var(--margin-min) * 1rem, calc(var(--margin-min) * 1rem + ((1vw - (var(--vp-min) / 100) * 1rem) * (100 * (var(--margin-max) - var(--margin-min)) / (var(--vp-max) - var(--vp-min))))), var(--margin-max) * 1rem);
+}
+	
+.gap--xs {
+	grid-gap: calc(var(--base-space) * var(--space-adjust-mob-xs) * 1rem);
+}
+.gap--s {
+	grid-gap: calc(var(--base-space) * var(--space-adjust-mob-s) * 1rem);
+}
+.gap--m {
+	grid-gap: calc(var(--base-space) * var(--space-adjust-mob-m) * 1rem);
+}
+.gap--l {
+	--margin-min: calc(var(--base-space) * var(--space-adjust-mob-l));
+	--margin-max: calc(var(--base-space) * var(--space-adjust-desk-l));
+}
+.gap--xl {
+	--margin-min: calc(var(--base-space) * var(--space-adjust-mob-xl));
+	--margin-max: calc(var(--base-space) * var(--space-adjust-desk-xl));
+}
+.gap--xxl {
+	--margin-min: calc(var(--base-space) * var(--space-adjust-mob-xxl));
+	--margin-max: calc(var(--base-space) * var(--space-adjust-desk-xxl));
+}
+	
+/* MISC */
+	
+.stretch {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
