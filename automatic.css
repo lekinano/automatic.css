@@ -237,23 +237,87 @@ These are generated from the text size system.
 	color: var(--primary);	
 }
 
+.text--primary-ultra-light {
+	color: var(--primary-ultra-light);	
+}
+
+.text--primary-light {
+	color: var(--primary-light);	
+}
+
+.text--primary-dark {
+	color: var(--primary-dark);	
+}
+
+.text--primary-ultra-dark {
+	color: var(--primary-ultra-dark);	
+}
+
 .text--secondary {
 	color: var(--secondary);	
+}
+
+.text--secondary-ultra-light {
+	color: var(--secondary-ultra-light);	
+}
+
+.text--secondary-light {
+	color: var(--secondary-light);	
+}
+
+.text--secondary-dark {
+	color: var(--secondary-dark);	
+}
+
+.text--secondary-ultra-dark {
+	color: var(--secondary-ultra-dark);	
 }
 
 .text--accent {
 	color: var(--accent);	
 }
 
+.text--accent-ultra-light {
+	color: var(--accent-ultra-light);	
+}
+
+.text--accent-light {
+	color: var(--accent-light);	
+}
+
+.text--accent-dark {
+	color: var(--accent-dark);	
+}
+
+.text--accent-ultra-dark {
+	color: var(--accent-ultra-dark);	
+}
+
 .text--base {
 	color: var(--base);	
 }
 
-.text--shade-white {
+.text--base-ultra-light {
+	color: var(--base-ultra-light);	
+}
+
+.text--base-light {
+	color: var(--base-light);	
+}
+
+.text--base-dark {
+	color: var(--base-dark);	
+}
+
+.text--base-ultra-dark {
+	color: var(--base-ultra-dark);	
+}
+
+.text--white {
 	color: var(--shade-white);	
 }
 
-.text--shade-black {
+.text--black {
 	color: var(--shade-black);	
 }
 
