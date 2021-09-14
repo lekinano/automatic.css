@@ -371,7 +371,7 @@ These apply padding to sections and containers.
 /* DEFAULT SECTION PADDING */
 
 .ct-section .ct-section-inner-wrap {
-	--pad-min: calc((var(--base-space) * (var(--space-adjust-mob-m)) * var(--space-adjust-section)));
+	--pad-min: calc((var(--base-space) * (var(--space-adjust-mob-s)) * var(--space-adjust-section)));
 	--pad-max: calc((var(--base-space) * (var(--space-adjust-desk-m)) * var(--space-adjust-section)));
 }
 
