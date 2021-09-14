@@ -116,7 +116,7 @@ If you want to base the clamp functions off different viewport variables, you ca
 ***/
 	
 	--vp-min: 32; /* Viewport Min Size in REM */
-	--vp-max: 112; /* Viewport Max Size in REM */
+	--vp-max: 128; /* Viewport Max Size in REM */
 		
 /*** 
 FLUID TEXT SIZE SYSTEM 
