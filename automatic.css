@@ -1517,6 +1517,6 @@ Flip items and images.
 }
 
 .flip--x-y,
-.flip--x-y div {
+.flip--x-y > div {
 	transform: scale(-1, -1);
 }
