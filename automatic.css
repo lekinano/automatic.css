@@ -152,9 +152,32 @@ The adjustment variables are multipliers of the base size.
 	--space-adjust-desk-xl: 2.4;
 	--space-adjust-desk-xxl: 3.4;
 	--space-adjust-section: 3;
-}
 
-/***** END ROOT VARIABLES *****/
+/*** 
+TEXT VARIABLES
+These can be used in place of classes.
+***/
+	
+	/* TEXT MIN * MAX CALCS – DON'T USE */
+	
+	--text-m-min: var(--base-text-mobile);
+	--text-m-max: var(--base-text-desktop);
+	--text-l-min: calc(var(--base-text-mobile) * var(--text-adjust-mob-l));
+	--text-l-max: calc(var(--base-text-desktop) * var(--text-adjust-desk-l));
+	--text-xl-min: calc(var(--base-text-mobile) * var(--text-adjust-mob-xl));
+	--text-xl-max: calc(var(--base-text-desktop) * var(--text-adjust-desk-xl));
+	--text-xxl-min: calc(var(--base-text-mobile) * var(--text-adjust-mob-xxl));
+	--text-xxl-max: calc(var(--base-text-desktop) * var(--text-adjust-desk-xxl));
+	
+	/* USE THESE TEXT VARIABLES */
+
+	--text-xs: calc((var(--base-text-mobile) - var(--text-adjust-mob-xs)) * 1rem);
+	--text-s: calc(var(--base-text-mobile) * var(--text-adjust-mob-m) * 1rem);
+	--text-l: clamp(calc(var(--text-l-min) * 1rem), calc(var(--text-l-min) * 1rem + ((1vw - (var(--vp-min) / 100) * 1rem) * (100 * (var(--text-l-max) - var(--text-l-min)) / (var(--vp-max) - var(--vp-min))))), calc(var(--text-l-max) * 1rem));
+	--text-xl: clamp(calc(var(--text-xl-min) * 1rem), calc(var(--text-xl-min) * 1rem + ((1vw - (var(--vp-min) / 100) * 1rem) * (100 * (var(--text-xl-max) - var(--text-xl-min)) / (var(--vp-max) - var(--vp-min))))), calc(var(--text-xl-max) * 1rem));
+	--text-xxl: clamp(calc(var(--text-xxl-min) * 1rem), calc(var(--text-xxl-min) * 1rem + ((1vw - (var(--vp-min) / 100) * 1rem) * (100 * (var(--text-xxl-max) - var(--text-xxl-min)) / (var(--vp-max) - var(--vp-min))))), calc(var(--text-xxl-max) * 1rem));
+	
+/***** END ROOT VARIABLES *****/ }
 
 /***** BEGIN ELEMENT & CLASS STYLING *****/
 
