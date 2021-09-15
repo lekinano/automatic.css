@@ -1500,3 +1500,23 @@ These control the position/behavior of elements
 .self--stretch {
 	align-self: stretch;
 }
+
+/*** 
+FLIP CLASSES
+Flip items and images.
+***/
+
+.flip--x,
+.flip--x > div { 
+	transform: scaleX(-1);
+}
+
+.flip--y,
+.flip--y > div {
+	transform: scaleY(-1);
+}
+
+.flip--x-y,
+.flip--x-y div {
+	transform: scale(-1, -1);
+}
